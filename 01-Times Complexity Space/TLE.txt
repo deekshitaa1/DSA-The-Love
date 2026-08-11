@@ -1,0 +1,19 @@
+# TIME LIMIT exceeded error
+
+
+code -> server
+timeLimit-> 1 sec-10^8 opereation
+
+if 10^8  time constarints is more than this
+1<N<10^5
+
+if TC=N^2
+then (10^5)^2=10^10
+10^10/10^8->100 sec  so which exceeds
+
+#how to chnage code
+N,NLOGN
+
+10^5*log10^5
+good
+

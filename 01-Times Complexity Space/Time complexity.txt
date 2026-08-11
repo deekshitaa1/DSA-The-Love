@@ -1,0 +1,236 @@
+============================================================
+              PYTHON TIME COMPLEXITY CHEAT SHEET
+============================================================
+
+Notation:
+---------
+n = Number of elements in the container
+k = Number of elements involved in the operation (parameter size)
+
+============================================================
+1. LIST (Python List)
+============================================================
+
+Lists are implemented as Dynamic Arrays.
+
++----------------------+--------------+---------------------+
+| Operation            | Average Case | Worst Case          |
++----------------------+--------------+---------------------+
+| Copy                 | O(n)         | O(n)                |
+| Append               | O(1)         | O(1) (Amortized)    |
+| Pop Last             | O(1)         | O(1)                |
+| Pop at Index         | O(n)         | O(n)                |
+| Insert               | O(n)         | O(n)                |
+| Get Item             | O(1)         | O(1)                |
+| Set Item             | O(1)         | O(1)                |
+| Delete Item          | O(n)         | O(n)                |
+| Iteration            | O(n)         | O(n)                |
+| Get Slice            | O(k)         | O(k)                |
+| Delete Slice         | O(n)         | O(n)                |
+| Set Slice            | O(k+n)       | O(k+n)              |
+| Extend               | O(k)         | O(k)                |
+| Sort                 | O(n log n)   | O(n log n)          |
+| Multiply             | O(n*k)       | O(n*k)              |
+| x in list            | O(n)         | O(n)                |
+| min(list)            | O(n)         | O(n)                |
+| max(list)            | O(n)         | O(n)                |
+| len(list)            | O(1)         | O(1)                |
++----------------------+--------------+---------------------+
+
+Notes:
+------
+append() is amortized O(1) because Python occasionally resizes the array.
+insert(0, x) is O(n).
+pop(0) is O(n).
+pop() from the end is O(1).
+
+============================================================
+2. DEQUE (collections.deque)
+============================================================
+
+Deque = Double Ended Queue
+Implemented as a linked list of fixed-size arrays.
+
++----------------------+--------------+---------------------+
+| Operation            | Average Case | Worst Case          |
++----------------------+--------------+---------------------+
+| Copy                 | O(n)         | O(n)                |
+| append()             | O(1)         | O(1)                |
+| appendleft()         | O(1)         | O(1)                |
+| pop()                | O(1)         | O(1)                |
+| popleft()            | O(1)         | O(1)                |
+| extend()             | O(k)         | O(k)                |
+| extendleft()         | O(k)         | O(k)                |
+| rotate()             | O(k)         | O(k)                |
+| remove(value)        | O(n)         | O(n)                |
+| len(deque)           | O(1)         | O(1)                |
++----------------------+--------------+---------------------+
+
+Notes:
+------
+Best choice for queue implementation.
+appendleft() and popleft() are O(1).
+Unlike lists, inserting/removing from the front is efficient.
+
+============================================================
+3. SET
+============================================================
+
+Sets are implemented using Hash Tables.
+
++---------------------------------------+--------------+--------------+
+| Operation                             | Average Case | Worst Case   |
++---------------------------------------+--------------+--------------+
+| x in set                              | O(1)         | O(n)         |
+| Union (s | t)                         | O(len(s)+len(t))           |
+| Intersection (s & t)                  | O(min(s,t))  | O(len(s)*len(t)) |
+| Difference (s - t)                    | O(len(s))    | O(len(s))    |
+| difference_update()                   | O(len(t))    | O(len(t))    |
+| Symmetric Difference (s ^ t)          | O(len(s))    | O(len(s)*len(t)) |
+| symmetric_difference_update()         | O(len(t))    | O(len(s)*len(t)) |
++---------------------------------------+--------------+--------------+
+
+Notes:
+------
+Membership checking is extremely fast.
+Duplicates are not allowed.
+Elements are unordered.
+
+============================================================
+4. DICTIONARY (dict)
+============================================================
+
+Dictionary is implemented using Hash Tables.
+
++----------------------+--------------+----------------------+
+| Operation            | Average Case | Worst Case           |
++----------------------+--------------+----------------------+
+| key in dict          | O(1)         | O(n)                 |
+| Copy                 | O(n)         | O(n)                 |
+| Get Item             | O(1)         | O(n)                 |
+| Set Item             | O(1)         | O(n)                 |
+| Delete Item          | O(1)         | O(n)                 |
+| Iteration            | O(n)         | O(n)                 |
++----------------------+--------------+----------------------+
+
+Notes:
+------
+Dictionary lookup is O(1) average.
+Worst case occurs due to many hash collisions.
+Keys must be hashable (immutable).
+
+============================================================
+5. COMMON PYTHON BUILT-IN FUNCTIONS
+============================================================
+
++-------------------------+----------------+
+| Function                | Complexity     |
++-------------------------+----------------+
+| len()                   | O(1)           |
+| min()                   | O(n)           |
+| max()                   | O(n)           |
+| sum()                   | O(n)           |
+| sorted()                | O(n log n)     |
+| reversed()              | O(1)           |
+| enumerate()             | O(1)           |
+| zip()                   | O(1)           |
+| any()                   | O(n)           |
+| all()                   | O(n)           |
++-------------------------+----------------+
+
+============================================================
+6. STRING OPERATIONS
+============================================================
+
+Strings are Immutable.
+
++---------------------------+----------------+
+| Operation                 | Complexity     |
++---------------------------+----------------+
+| len(s)                    | O(1)           |
+| s[i]                      | O(1)           |
+| Slice                     | O(k)           |
+| Concatenation (+)         | O(n+m)         |
+| Repeat (*)                | O(n*k)         |
+| x in string               | O(n)           |
+| find()                    | O(n)           |
+| replace()                 | O(n)           |
+| split()                   | O(n)           |
+| join()                    | O(n)           |
+| strip()                   | O(n)           |
+| upper()/lower()           | O(n)           |
++---------------------------+----------------+
+
+============================================================
+7. QUICK INTERVIEW REVISION
+============================================================
+
+LIST
+-----
+append()             -> O(1)
+pop()                -> O(1)
+pop(0)               -> O(n)
+insert()             -> O(n)
+index()              -> O(n)
+remove()             -> O(n)
+sort()               -> O(n log n)
+
+DEQUE
+------
+append()             -> O(1)
+appendleft()         -> O(1)
+pop()                -> O(1)
+popleft()            -> O(1)
+
+SET
+----
+add()                -> O(1)
+remove()             -> O(1)
+discard()            -> O(1)
+x in set             -> O(1)
+union                -> O(n)
+intersection         -> O(min(n,m))
+
+DICT
+-----
+get()                -> O(1)
+set                  -> O(1)
+delete               -> O(1)
+key in dict          -> O(1)
+items() iteration    -> O(n)
+
+STRING
+-------
+Concatenation (+)    -> O(n)
+join()               -> O(n)
+split()              -> O(n)
+replace()            -> O(n)
+find()               -> O(n)
+
+============================================================
+8. MOST IMPORTANT INTERVIEW POINTS
+============================================================
+
+✔ List Append                 -> O(1)
+✔ List Insert Front           -> O(n)
+✔ List Pop Last               -> O(1)
+✔ List Pop Front              -> O(n)
+
+✔ Deque Append Left           -> O(1)
+✔ Deque Pop Left              -> O(1)
+
+✔ Dictionary Lookup           -> O(1)
+✔ Dictionary Insert           -> O(1)
+
+✔ Set Lookup                  -> O(1)
+✔ Set Insert                  -> O(1)
+
+✔ Sorting                     -> O(n log n)
+
+✔ Binary Search               -> O(log n)
+
+✔ Linear Search               -> O(n)
+
+============================================================
+END OF PYTHON TIME COMPLEXITY CHEAT SHEET
+============================================================
