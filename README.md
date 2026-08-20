@@ -1,21 +1,18 @@
 <div align="center">
 
-# ⚡ DSA — THE LOVE
+# DSA / THE LOVE
 
-### `One problem. One concept. One step closer to mastery.`
+### A long-term engineering log of learning, solving, and thinking in algorithms.
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,50:1e293b,100:7c3aed&height=220&section=header&text=DSA%20THE%20LOVE&fontSize=52&fontColor=ffffff&fontAlignY=38&desc=Learn%20%E2%80%A2%20Solve%20%E2%80%A2%20Analyze%20%E2%80%A2%20Repeat&descAlignY=62&descSize=18" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:050505,45:111111,75:1f2937,100:0ea5e9&height=180&section=header&text=DSA%20%2F%20THE%20LOVE&fontSize=44&fontColor=ffffff&fontAlignY=42&desc=PROBLEM%20SOLVING%20%7C%20ALGORITHMIC%20THINKING%20%7C%20ENGINEERING%20DISCIPLINE&descAlignY=67&descSize=13" width="100%" />
 
-[![Python](https://img.shields.io/badge/Python-111827?style=for-the-badge&logo=python&logoColor=3776AB)](https://www.python.org/)
-[![DSA](https://img.shields.io/badge/Data%20Structures%20%26%20Algorithms-111827?style=for-the-badge&logo=leetcode&logoColor=FFA116)](https://github.com/deekshitaa1/DSA-The-Love)
-[![GitHub](https://img.shields.io/badge/Practice%20Repository-111827?style=for-the-badge&logo=github&logoColor=white)](https://github.com/deekshitaa1/DSA-The-Love)
-[![Website](https://img.shields.io/badge/DSA%20Progress%20UI-111827?style=for-the-badge&logo=googlechrome&logoColor=4285F4)](https://deekshitaa1.github.io/DSA-The-Love/)
+`Python` &nbsp; `Algorithms` &nbsp; `Data Structures` &nbsp; `Complexity Analysis` &nbsp; `Problem Solving`
 
 </div>
 
 ---
 
-## 🧠 What Is This?
+## WHAT IS THIS?
 
 **DSA-The-Love** is my personal, continuously evolving **Data Structures & Algorithms problem-solving repository**.
 
@@ -29,61 +26,84 @@ It is built **one VS Code session at a time, one problem at a time, every day.**
 
 And as long as I keep coding, this repository keeps growing.
 
-**Until my last line of code. Until my breath. ❤️‍🔥**
+<br>
+
+<div align="center">
+
+## `I WILL KEEP SOLVING DSA UNTIL MY LAST BREATH.`
+
+### Not a 30-day challenge. Not a temporary goal. A lifetime commitment to getting better at the craft.
+
+</div>
+
+That is the idea behind this repository.
+
+I want to be able to look back years from now and see the progression: the first basic problems, the inefficient solutions, the mistakes, the optimizations, the difficult concepts, and eventually the problems that once looked impossible.
+
+**The repository grows because the learning never stops.**
 
 ---
 
-## 🖥️ The Mindset
+## THE ENGINEERING LOOP
 
 ```text
-                    ┌─────────────────────────────┐
-                    │       DSA-THE-LOVE           │
-                    │   THINK → CODE → ANALYZE    │
-                    └──────────────┬──────────────┘
-                                   │
-                 ┌─────────────────┼─────────────────┐
-                 ▼                 ▼                 ▼
-          ┌────────────┐    ┌────────────┐    ┌────────────┐
-          │ UNDERSTAND │───▶│   SOLVE    │───▶│  OPTIMIZE  │
-          └────────────┘    └────────────┘    └─────┬──────┘
-                                                    │
-                                                    ▼
-                                             ┌────────────┐
-                                             │   REPEAT   │
-                                             └─────┬──────┘
-                                                   │
-                                                   └──────▶ ∞
+                         ┌─────────────────────┐
+                         │       PROBLEM       │
+                         └──────────┬──────────┘
+                                    │
+                                    ▼
+                         ┌─────────────────────┐
+                         │      UNDERSTAND     │
+                         │ constraints / cases │
+                         └──────────┬──────────┘
+                                    │
+                                    ▼
+                         ┌─────────────────────┐
+                         │       DESIGN        │
+                         │ pattern / approach  │
+                         └──────────┬──────────┘
+                                    │
+                                    ▼
+                         ┌─────────────────────┐
+                         │       IMPLEMENT     │
+                         │       VS CODE       │
+                         └──────────┬──────────┘
+                                    │
+                                    ▼
+                         ┌─────────────────────┐
+                         │       ANALYZE       │
+                         │    time / space     │
+                         └──────────┬──────────┘
+                                    │
+                                    ▼
+                         ┌─────────────────────┐
+                         │      OPTIMIZE       │
+                         │  if a better way    │
+                         └──────────┬──────────┘
+                                    │
+                                    ▼
+                         ┌─────────────────────┐
+                         │       REPEAT        │
+                         └──────────┬──────────┘
+                                    │
+                                    └───────────────► ∞
 ```
 
-### My problem-solving loop
+### The habit
 
 ```python
-while True:
-    understand(problem)
-    find_pattern(problem)
-    design_solution()
-    write_code()
-    analyze_time_and_space()
-    learn_from_mistakes()
-    solve_the_next_one()
+while I_can_still_code:
+    learn()
+    think()
+    solve()
+    analyze()
+    improve()
+    repeat()
 ```
 
 ---
 
-## 🗺️ Current Learning Map
-
-| # | Area | Focus | Status |
-|:--:|---|---|:---:|
-| `01` | ⏱️ **Time & Space Complexity** | Big-O, efficiency, algorithm analysis | 🟢 Active |
-| `02` | 🧮 **Mathematics & Logic** | Mathematical reasoning and implementation | 🟢 Active |
-| `03` | 🔁 **Recursion Basics** | Base cases, recursive calls, decomposition | 🟢 Active |
-| `04` | 🌳 **More DSA** | Trees, graphs, DP, greedy, hashing & more | 🔵 Expanding |
-
-> The roadmap is intentionally alive. New topics are added as the learning journey moves forward.
-
----
-
-## 📂 Repository Architecture
+## REPOSITORY MAP
 
 ```text
 DSA-The-Love/
@@ -123,200 +143,124 @@ DSA-The-Love/
 
 ---
 
-## 💻 Coding Philosophy
+## CURRENT FOCUS
 
-I try to treat every problem as more than a coding exercise.
-
-```text
-┌────────────────────────────────────────────────────────────┐
-│  01  Understand the problem                                │
-│  02  Identify constraints                                  │
-│  03  Think about patterns                                  │
-│  04  Build the simplest correct solution                   │
-│  05  Analyze time complexity                               │
-│  06  Analyze space complexity                              │
-│  07  Look for optimization                                 │
-│  08  Revisit the problem later                             │
-└────────────────────────────────────────────────────────────┘
-```
-
-**Correctness first. Optimization second. Understanding always.**
-
----
-
-## 🎯 Why I Built This
-
-Most beginners don't struggle because DSA is impossible.
-
-They struggle because the learning process feels fragmented.
-
-This repository is my attempt to keep the journey visible:
-
-- 📌 **Concepts** — learn the foundation before jumping ahead
-- 🧩 **Problems** — turn concepts into actual code
-- 🔍 **Analysis** — understand why a solution works
-- ♻️ **Revision** — return to old problems and improve
-- 📈 **Consistency** — make problem solving a daily habit
-
-If you're beginning DSA, you don't need to solve everything at once.
-
-**Start with one problem. Understand it. Then solve another.**
-
----
-
-## 🌱 For Beginners
-
-If you are starting your DSA journey, you can use this repository as a reference while building your own path.
-
-### Recommended order
-
-```text
-FOUNDATIONS
-    ↓
-TIME & SPACE COMPLEXITY
-    ↓
-MATH + LOGIC
-    ↓
-RECURSION
-    ↓
-ARRAYS + STRINGS
-    ↓
-HASHING
-    ↓
-LINKED LIST
-    ↓
-STACK + QUEUE
-    ↓
-TREES
-    ↓
-HEAPS
-    ↓
-GRAPHS
-    ↓
-GREEDY
-    ↓
-DYNAMIC PROGRAMMING
-    ↓
-PATTERNS + INTERVIEW PROBLEMS
-```
-
-Don't copy solutions blindly.
-
-**Read → Think → Attempt → Code → Compare → Re-code.**
-
-That is where the learning happens.
-
----
-
-## 🧪 A Small Example of the Journey
-
-```python
-# Problem: Check whether a number is even or odd
-
-n = int(input("Enter a number: "))
-
-if n % 2 == 0:
-    print("Even")
-else:
-    print("Odd")
-```
-
-The code is small.
-
-The important part is understanding **why `% 2` works**, what the edge cases are, and what the complexity is.
-
-```text
-Time  → O(1)
-Space → O(1)
-```
-
-Small problems build the instincts required for bigger ones.
-
----
-
-## 📊 The Journey Dashboard
-
-A dedicated visual progress page is included with the repository.
-
-### 🚀 [Open the DSA Progress Dashboard →](https://deekshitaa1.github.io/DSA-The-Love/)
-
-The dashboard presents the journey through a coding-focused interface with progress sections, topic navigation, solution highlights, and the overall learning approach.
-
----
-
-## 🧰 Tools & Environment
-
-<div align="center">
-
-| Tool | Purpose |
+| Module | Engineering Focus |
 |---|---|
-| 🐍 **Python** | Primary implementation language |
-| 💙 **VS Code** | Daily coding environment |
-| 🐙 **Git & GitHub** | Version control and public progress |
-| 🧠 **DSA** | Core problem-solving practice |
-| 🌐 **GitHub Pages** | Interactive progress dashboard |
+| `01` Time & Space Complexity | Big-O, efficiency, runtime and memory analysis |
+| `02` Mathematics & Logic | Mathematical reasoning and implementation fundamentals |
+| `03` Recursion Basics | Base cases, recursive state and problem decomposition |
+| `04+` Expanding | Arrays, strings, hashing, linked lists, trees, graphs, DP and more |
 
-</div>
+The structure will evolve as the depth of the journey increases.
 
 ---
 
-## 🔥 The Rule
+## HOW I APPROACH A PROBLEM
 
 ```text
-                         ┌───────────────┐
-                         │  DON'T STOP   │
-                         └───────┬───────┘
-                                 │
-                    ┌────────────┴────────────┐
-                    ▼                         ▼
-              HARD PROBLEM              EASY PROBLEM
-                    │                         │
-                    └────────────┬────────────┘
-                                 ▼
-                         LEARN SOMETHING
-                                 │
-                                 ▼
-                            CODE AGAIN
-                                 │
-                                 ▼
-                              REPEAT
-                                 │
-                                 ▼
-                                ∞
+01  Read the problem
+02  Extract the constraints
+03  Identify edge cases
+04  Build a brute-force idea
+05  Look for patterns
+06  Implement the cleanest correct solution
+07  Measure time complexity
+08  Measure space complexity
+09  Find possible optimizations
+10  Revisit the problem later
 ```
 
-**Consistency beats intensity when intensity cannot be sustained.**
-
-The goal is not to have a perfect streak.
-
-The goal is to keep coming back to the editor.
+**Correctness first. Complexity second. Understanding always.**
 
 ---
 
-## 🤝 For Anyone Learning DSA
+## FOR BEGINNERS
 
-If something here helps you understand a concept faster, that's a win.
+If you are starting DSA, don't treat this repository as a place to collect answers.
 
-If you spot a better approach, an edge case, or an optimization, feel free to open an issue or pull request.
+Use it as a place to understand **how solutions are constructed**.
 
-This repository is primarily my learning journal, but I hope it becomes useful to someone else's journey too.
+```text
+UNDERSTAND
+     ↓
+ATTEMPT WITHOUT LOOKING
+     ↓
+WRITE THE SOLUTION
+     ↓
+ANALYZE COMPLEXITY
+     ↓
+COMPARE WITH BETTER APPROACHES
+     ↓
+RE-CODE FROM MEMORY
+     ↓
+MOVE TO THE NEXT PROBLEM
+```
 
-> **If one beginner understands DSA a little better because of this repository, every late-night debugging session was worth it.**
+The objective is not to memorize 1,000 solutions.
+
+The objective is to develop the ability to look at a new problem and ask:
+
+> **What is the structure of this problem, and what is the most appropriate way to attack it?**
 
 ---
 
-## ⭐ Follow the Journey
+## CODE. THINK. REPEAT.
 
-If you find this repository useful, consider giving it a ⭐.
+A simple problem is still valuable if it teaches a fundamental idea.
 
-It helps turn a personal learning log into something that can help more developers.
+A difficult problem is still valuable if it exposes a gap in understanding.
+
+A wrong solution is still valuable if it explains why the approach failed.
+
+That is why this repository is intentionally chronological and imperfect: **it records the engineering process, not just the final answers.**
+
+---
+
+## PROGRESS INTERFACE
+
+The repository also contains a dedicated visual progress interface.
+
+**[Open the DSA Progress Dashboard →](https://deekshitaa1.github.io/DSA-The-Love/)**
+
+It provides a visual layer over the learning repository while the actual implementations remain inside the source tree.
+
+---
+
+## TOOLCHAIN
+
+```text
+LANGUAGE       → Python
+EDITOR         → Visual Studio Code
+VERSION CONTROL→ Git
+REPOSITORY     → GitHub
+DOCUMENTATION  → Markdown
+INTERFACE      → HTML / CSS / JavaScript
+```
+
+---
 
 <div align="center">
 
-### `Keep solving. Keep failing. Keep learning. Keep coding.`
+## THE COMMITMENT
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:7c3aed,50:2563eb,100:0f172a&height=120&section=footer" width="100%" />
+```text
+I am not trying to finish DSA.
 
-**Built with curiosity, Python, VS Code, and an unreasonable amount of love for DSA. ❤️‍🔥**
+I am building the ability to think algorithmically.
+
+One problem.
+One mistake.
+One insight.
+One improvement.
+
+Every day.
+
+Until my last breath.
+```
+
+### `THE CODE STAYS. THE LEARNING CONTINUES.`
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0ea5e9,45:1e293b,100:050505&height=110&section=footer" width="100%" />
 
 </div>
