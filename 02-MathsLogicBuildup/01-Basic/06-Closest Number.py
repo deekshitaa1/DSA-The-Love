@@ -800,3 +800,49 @@ The core idea is:
 """
 #[Naive Approach] Iterative Checking - O(m) Time and O(1) Space
 
+#quaotient based approach
+
+
+'''def ClosestNumber(n,m):
+    q=int(n/m)
+
+    n1=m*q
+    if n*m>0:
+        n2=m*(q+1)
+    else:
+        n2=m*(q-1)
+    difference1=abs(n-n1)
+    difference2=abs(n-n2)
+
+    if difference1<difference2:
+        return n1
+    elif difference2<difference1:
+        return n2
+    else:
+        if abs(n1)>abs(n2):
+            return n1
+        else:
+            return n2
+n=int(input("enter an number: "))
+m=int(input("enter an number: "))
+print(ClosestNumber(n,m))
+'''
+def ClosestNumber(n,m):
+    q=int(n/m)
+    n1=m*q
+    if m*q>0:
+        n2=(m*q)+1
+    else:
+        n2=(m*q)-1
+    difference1=n-n1
+    differennce2=n-n2
+    if difference1<differennce2:
+        return n1
+    elif differennce2<difference1:
+        return n2
+    else:
+        return n1
+
+n=list(map(int,input("enter an array: ").split()))
+m=int(input())
+print(ClosestNumber(n,m))

@@ -1,6 +1,6 @@
 import math
 def PrimeNumber(n):
-    if n<=0:
+    if n<=1:
         return False
     if n==2:
         return True
