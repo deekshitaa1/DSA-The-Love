@@ -1,0 +1,334 @@
+============================================================
+                    ARRAY DATA STRUCTURE
+============================================================
+
+Last Updated: 3 March 2026
+
+
+1. WHAT IS AN ARRAY?
+------------------------------------------------------------
+
+An Array is a fundamental linear data structure used to store
+multiple elements.
+
+In languages such as C/C++ and Java primitive arrays, the actual
+elements are stored at contiguous memory locations.
+
+In Python, JavaScript, and Java non-primitive arrays, references
+to objects are stored at contiguous locations.
+
+
+2. KEY CHARACTERISTICS
+------------------------------------------------------------
+
+• Linear Data Structure
+  Elements are arranged sequentially.
+
+• Fixed / Dynamic Size
+  Depends on the programming language.
+  Example:
+      C/C++ arrays → generally fixed size
+      Python list → dynamic size
+
+• Indexed
+  Elements are accessed using an index.
+
+  Example:
+
+      arr = [10, 20, 30, 40]
+
+      arr[0] → 10
+      arr[1] → 20
+      arr[2] → 30
+      arr[3] → 40
+
+
+3. IMPORTANT ADVANTAGES
+------------------------------------------------------------
+
+3.1 RANDOM ACCESS
+------------------------------------------------------------
+
+The i-th element can be accessed directly in O(1) time.
+
+Example:
+
+    arr = [10, 20, 30, 40, 50]
+
+    arr[3]
+
+    Output:
+    40
+
+Why O(1)?
+
+The computer can directly calculate the location of the
+required element using:
+
+    Base Address + (Index × Element Size)
+
+Therefore, it does not need to visit the previous elements.
+
+
+3.2 CACHE FRIENDLINESS
+------------------------------------------------------------
+
+Arrays provide good cache performance because elements or
+references are stored next to each other in memory.
+
+This provides:
+
+    Locality of Reference
+
+Because nearby elements are likely to be loaded into the
+CPU cache together.
+
+
+4. BASIC ARRAY OPERATIONS
+------------------------------------------------------------
+
+Operation              Time Complexity
+
+Access                 O(1)
+
+Search - Unsorted      O(n)
+
+Search - Sorted        O(log n)   [Binary Search]
+
+Insertion at End       O(1)*
+
+Insertion at Beginning O(n)
+
+Insertion in Middle    O(n)
+
+Deletion at End        O(1)*
+
+Deletion at Beginning  O(n)
+
+Deletion in Middle     O(n)
+
+
+* Depends on the implementation and whether resizing is required.
+
+
+5. WHY INSERTION/DELETION CAN BE SLOW
+------------------------------------------------------------
+
+Consider:
+
+    [10, 20, 30, 40, 50]
+
+If we insert 25 at index 2:
+
+    [10, 20, 25, 30, 40, 50]
+
+Elements after index 2 need to be shifted.
+
+    30 → move right
+    40 → move right
+    50 → move right
+
+Therefore:
+
+    Time Complexity = O(n)
+
+
+Similarly, deleting an element from the middle requires
+shifting the remaining elements.
+
+
+6. ARRAY EXAMPLE
+------------------------------------------------------------
+
+    arr = [10, 20, 30, 40, 50]
+
+Index:
+
+    0    1    2    3    4
+
+Value:
+
+    10   20   30   40   50
+
+
+Access:
+
+    arr[2]
+
+Output:
+
+    30
+
+
+7. ADVANTAGES
+------------------------------------------------------------
+
+✓ Fast random access
+
+✓ O(1) index access
+
+✓ Simple to implement
+
+✓ Memory efficient for storing sequential data
+
+✓ Good cache locality
+
+✓ Useful for implementing other data structures
+
+
+8. DISADVANTAGES
+------------------------------------------------------------
+
+✗ Insertion in the middle is expensive
+
+✗ Deletion in the middle is expensive
+
+✗ Searching an unsorted array takes O(n)
+
+✗ Fixed-size arrays cannot easily grow
+
+✗ Maintaining contiguous memory can be difficult for
+  very large arrays
+
+
+9. WHERE ARRAYS ARE USED
+------------------------------------------------------------
+
+Arrays are used as the foundation for many other
+data structures.
+
+Examples:
+
+    • Stack
+    • Queue
+    • Deque
+    • Hash Table
+    • Heap
+    • Graph representation
+    • Matrix
+    • Dynamic Arrays
+
+
+10. WHEN TO USE AN ARRAY
+------------------------------------------------------------
+
+Use an array when:
+
+    • You need fast index-based access.
+    • You frequently access elements by position.
+    • Data is stored sequentially.
+    • Insertions and deletions are not frequent.
+    • Memory/cache efficiency is important.
+
+
+11. WHEN NOT TO USE AN ARRAY
+------------------------------------------------------------
+
+An array may not be the best choice when:
+
+    • Frequent insertion at the beginning is required.
+    • Frequent deletion from the middle is required.
+    • The data size changes frequently.
+    • Searching an unsorted collection is the main operation.
+
+
+12. INTERVIEW POINTS
+------------------------------------------------------------
+
+Remember:
+
+    Array
+       ↓
+    Linear Data Structure
+       ↓
+    Index Based
+       ↓
+    Random Access = O(1)
+       ↓
+    Unsorted Search = O(n)
+       ↓
+    Sorted Search = O(log n) using Binary Search
+       ↓
+    Middle Insertion/Deletion = O(n)
+
+
+13. IMPORTANT COMPLEXITIES
+------------------------------------------------------------
+
+Access              → O(1)
+
+Update              → O(1)
+
+Linear Search       → O(n)
+
+Binary Search       → O(log n)
+
+Insertion Middle    → O(n)
+
+Deletion Middle     → O(n)
+
+
+14. QUICK REVISION
+------------------------------------------------------------
+
+Q: What is an array?
+
+A:
+An array is a linear data structure that stores elements
+sequentially and provides index-based access.
+
+
+Q: What is the time complexity of accessing an element?
+
+A:
+O(1)
+
+
+Q: Why is array access O(1)?
+
+A:
+Because the address of an element can be calculated directly
+using its index.
+
+
+Q: What is the time complexity of searching an unsorted array?
+
+A:
+O(n)
+
+
+Q: What is the time complexity of binary search?
+
+A:
+O(log n), provided the array is sorted.
+
+
+Q: Why is insertion in the middle O(n)?
+
+A:
+Because existing elements may need to be shifted.
+
+
+Q: Why are arrays cache-friendly?
+
+A:
+Because elements/references are stored in contiguous memory
+locations, providing good locality of reference.
+
+
+============================================================
+                    KEY TAKEAWAY
+============================================================
+
+ARRAY = FAST ACCESS + SIMPLE STRUCTURE
+
+Access       → O(1)
+Search       → O(n)
+Binary Search→ O(log n) if sorted
+Insert Middle→ O(n)
+Delete Middle→ O(n)
+
+Arrays are excellent when fast random access is important,
+but they are less efficient when frequent insertion or
+deletion is required.
+============================================================
