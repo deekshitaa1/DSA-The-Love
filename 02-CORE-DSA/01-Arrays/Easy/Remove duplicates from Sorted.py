@@ -88,3 +88,5 @@ def RemoveDuplicates(arr):
     return sorted(seen)
 arr=list(map(int,input("enter an array: ").split()))
 print(RemoveDuplicates(arr))
+
+
