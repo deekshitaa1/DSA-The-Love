@@ -22,3 +22,7 @@ arr=list(map(int,input("enter an array: ").split()))
 k=int(input("enter k: "))
 print(RotateArray(arr,k))
 '''
+#best approach
+def rotateArray(k,n):
+    k=k%len(n)
+    return a[d:]+a[:d]
