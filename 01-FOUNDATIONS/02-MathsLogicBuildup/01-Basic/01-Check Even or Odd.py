@@ -74,7 +74,7 @@ Space Complexity:
 
 #code
 
-def isEven(n):
+''''def isEven(n):
 
     if n%2==0:
         return True
@@ -85,7 +85,7 @@ if isEven(n):
     print(f"The {n} is even.")
 else:
     print(f"The {n} is odd.")
-# 2. [Efficient Approach] Using Bitwise AND Operator - O(1) Time and O(1) Space
+# 2. [Efficient Approach] Using Bitwise AND Operator - O(1) Time and O(1) Space'''
 
 '''The last bit of all odd numbers is always 1, while for even numbers it’s 0. So, when performing bitwise AND operation with 1, odd numbers give 1, and even numbers give 0.
 
@@ -102,7 +102,7 @@ Examples:
             &  0 0 0 0 0 1
                  ----------
                 0 0 0 0 0 0 , so this we can say it is an even number.'''
-
+'''
 #code
 def isOdd(n):
     if (n & 1)!=0:
@@ -114,3 +114,21 @@ if isOdd(n):
     print(f" {n} is even number.")
 else:
     print(f" {n} is odd number.")
+'''
+'''
+def isEven(n):
+    if n%2==0:
+        return True
+    else:
+        return False
+n=122
+print(isEven(n))
+'''
+def iseven(num):
+    while num>0:
+        if num%2==0:
+            return f"{num} is even number."
+        else:
+            return f"{num}  is odd number."
+num=int(input("enter an  number: "))
+print(iseven(num))

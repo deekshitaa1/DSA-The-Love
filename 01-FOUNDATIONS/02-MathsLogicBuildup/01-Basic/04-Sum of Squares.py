@@ -284,7 +284,7 @@ We can now implement the solutions in Python.
 
 
 
-
+'''
 
 import code
 
@@ -304,11 +304,17 @@ def Summation(n):
     return (n * (n+1)*(2*n+1))//6
 n=int(input("enter an input: "))
 print(Summation(n))
-'''Avoiding the overflow:
-In the above method, sometimes due to large value of n, the value of (n * (n + 1) * (2 * n + 1)) would overflow. We can avoid this overflow up to some extent using the fact that n*(n+1) must be divisible by 2 and restructuring the formula as (n * (n + 1) / 2) * (2 * n + 1) / 3;'''
+Avoiding the overflow:
+In the above method, sometimes due to large value of n, the value of (n * (n + 1) * (2 * n + 1)) would overflow. We can avoid this overflow up to some extent using the fact that n*(n+1) must be divisible by 2 and restructuring the formula as (n * (n + 1) / 2) * (2 * n + 1) / 3;
 
 #code
 def summation(n):
     return (n*(n+1)//2  *(2*n+1))//3
 n=int(input("enter an number: "))
 print(summation(n))
+'''
+
+def sumofsquares(n):
+    return (n*(n+1)//2 * (2*n+1))//3
+n=int(input("enter an array: "))
+print(sumofsquares(n))

@@ -1,4 +1,4 @@
-from re import A
+''''from re import A
 
 
 def ArmStrongNumber(n):
@@ -14,3 +14,21 @@ def ArmStrongNumber(n):
     return f"{orginal} not an armstrong number."
 n=int(input("enter an number: "))
 print(ArmStrongNumber(n))
+'''
+
+def armstorng_number(num):
+    orginal=num
+    count=len(str(num))
+    arm=0
+
+    while num>0:
+        digits=num%10
+        arm=arm+digits**count
+        num=num//10
+
+        if arm==orginal:
+            return True
+
+    return f"not an armstrong"
+num=int(input("enter an number: "))
+print(armstorng_number(num))

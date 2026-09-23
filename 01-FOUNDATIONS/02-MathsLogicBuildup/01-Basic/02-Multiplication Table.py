@@ -162,7 +162,7 @@ The loop multiplies n = 5 by i = 10.
 Result: 5 * 10 = 50.
 Output: 5 * 10 = 50.
 '''
-#Code
+'''#Code
 def Print_Table(n):
     for i in range(1,11):
         # multiplies from 1 to 10
@@ -172,7 +172,7 @@ Print_Table(n)
 
 
 # 2. Recursive Approach
-'''In this method, we pass i as an additional parameter with initial value as 1. We print n * i and then recursively call for i+1. We stop the recursion when i becomes 11 as we need to print only 10 multiples of given number and i.'''
+In this method, we pass i as an additional parameter with initial value as 1. We print n * i and then recursively call for i+1. We stop the recursion when i becomes 11 as we need to print only 10 multiples of given number and i.
 
 #Code
 def printTable(n, i=1):
@@ -188,3 +188,25 @@ def printTable(n, i=1):
 n = int(input("Enter an input: "))
 
 printTable(n)
+'''
+'''def multiplication(n,i=1):
+    if i ==11:
+        return
+    print ( n,"*" ,i,"=", n*i )
+    multiplication(n,i+1)
+
+n = int(input("Enter an input: "))
+
+multiplication(n)'''
+
+
+from operator import mul
+
+
+def multiplication(n,i=1):
+    if i==11:
+        return
+    print(n,'*',i,'=',n*i)
+    multiplication(n,i+1)
+n=int(input("enter an number: "))
+multiplication(n)

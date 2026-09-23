@@ -222,7 +222,7 @@ all numbers.
 ============================================================
 """
 
-
+'''
 # ============================================================
 # APPROACH 1: USING A LOOP
 # ============================================================
@@ -264,3 +264,16 @@ n = int(input("Enter a number: "))
 print("Using Loop      :", sum_using_loop(n))
 print("Using Recursion :", sum_using_recursion(n))
 print("Using Formula   :", sum_using_formula(n))
+
+def sumofn(n):
+    sum=0
+    for num in n:
+        sum=sum+num
+    return  sum
+
+'''
+'''def sumofN(n):
+    return n*(n+1)//2
+n=int(input("enter an number: "))
+print(sumofN(n))
+'''
