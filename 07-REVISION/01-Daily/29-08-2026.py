@@ -32,5 +32,4 @@ def SumOfsquares(n):
 n=int(input("enter an num : "))
 print(SumOfsquares(n))
 #swap two numbers
-def Swap(a,b):
-    
+
